@@ -31,7 +31,7 @@
             <RadioButtonField label="Your preferred pet" :options="petOptions" v-model="formData.preferredPet" />
 
             <div class="submit-area">
-                <button :disabled="isFormInvalid" :aria-disabled="isFormInvalid ? 'true' : 'false'" class="submit-button" type="button" @click.prevent="submitForm">Submit</button>
+                <button class="submit-button" type="button" @click.prevent="submitForm">Submit</button>
             </div>
         </form>
     </div>
@@ -116,12 +116,6 @@
     .submit-button:focus {
         outline: 2px solid #000000;
         outline-offset: 2px;
-    }
-
-    .submit-button:disabled {
-        background-color: #cccccc;
-        color: #666666;
-        cursor: not-allowed;
     }
 
     .label {

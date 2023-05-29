@@ -1,6 +1,6 @@
 <template>
     <div class="flag">
-        <img id="animatedImg" alt="" src="../assets/accessibility-flag.png" :class="{'wave': animate}" @click="toggleAnimation" />
+        <img id="animatedImg" alt="" aria-hidden="true" src="../assets/accessibility-flag.png" @click="toggleAnimation" />
     </div>
 </template>
   

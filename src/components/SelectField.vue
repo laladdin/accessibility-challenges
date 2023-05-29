@@ -1,5 +1,6 @@
 <template>
   <div class="form-field">
+    <label :for="id" class="label">{{ label }}</label>
     <select 
       :id="id"
       class="select-field"

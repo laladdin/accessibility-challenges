@@ -1,6 +1,6 @@
 <template>
   <fieldset class="form-field">
-    <div class="radio-buttons-label">{{ label }}</div>
+    <legend class="radio-buttons-label">{{ label }}</legend>
     <div v-for="option in options" :key="option.value">
       <input
         type="radio"

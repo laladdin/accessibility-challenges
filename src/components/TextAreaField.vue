@@ -1,10 +1,11 @@
 <template>
   <div class="form-field">
+    <label :for="id" class="label">{{ label }}</label>
     <textarea
       :id="id"
       class="textarea-field"
       :name="name"
-      :placeholder="label"
+      :placeholder="placeholder"
       :value="modelValue"
       @input="updateValue($event)"
     ></textarea>

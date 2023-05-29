@@ -15,6 +15,9 @@
 
     const handleCloseModal = (event: any) => {
         isModalVisible.value = event;
+        if (isModalVisible.value === false) {
+            openModalButton.value?.focus();
+        }
     };
 
     const openModal = () => {

@@ -1,19 +1,21 @@
 <template>
   <div class="form-field">
-    <label class="label">
+    <label :for="id" class="label">
       {{ label }}<span v-if="required" class="required">*</span>
     </label>
     <input 
+      :id="id"
       class="input-field"
       :value="modelValue"
       @input="updateValue($event)"
       :placeholder="placeholder"
       :required="required"
+      :aria-required="required ? 'true' : 'false'"
+      :aria-describedby="isErrorVisible && error ? `${id}-error` : undefined"
       :type="type"
     />
-    <p v-if="isErrorVisible && error" class="error">{{ error }}</p>
-  </div>
-</template>
+    <p v-if="isErrorVisible && error" :id="`${id}-error`" class="error">{{ error }}</p>
+  </div></template>
 
 <script setup lang="ts">
   import { defineProps, defineEmits, ref, watch, onMounted, nextTick } from 'vue';
@@ -63,7 +65,7 @@
   }
 
   .error {
-    color: #FFADAD;
+    color: #AD0000;
     font-weight: 700;
   }
 
