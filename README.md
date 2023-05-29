@@ -1,6 +1,6 @@
-# accessibility-exercises
+# accessibility challenges
 
-Welcome to the introduction page of accessibility exercises for coders! The purpose of this project is to offer a platfor to reherse making accessibility improving changes to a web page. So the sad side of the story is that a large part of people would not be able to use this website, because accessibility has not been taken into account in its development. Do you know what should be done to improve accessibility of this page?
+Welcome to the introduction page of accessibility challenges for coders! The purpose of this project is to offer a platfor to reherse making accessibility improving changes to a web page. So the sad side of the story is that a large part of people would not be able to use this website, because accessibility has not been taken into account in its development. Do you know what should be done to improve accessibility of this page?
 
 This project has been made with Vue 3 and TypeScript with script setup. You can download the project to your own computer and run it locally. Introductions how to get started are placed in the next chapter.
 
@@ -24,10 +24,10 @@ Before you can run this project, you need to have the following tools installed 
 1. **Clone the project**: Navigate to the directory where you want to clone the project in your terminal/command prompt. Run the following command to clone the project from GitHub:
 
     ```bash
-    git clone https://github.com/laladdin/accessibility-workshop.git
+    git clone https://github.com/laladdin/accessibility-challenges.git
     ```
 
-2. **Navigate to the project directory**: Use the command `cd accessibility-exercises`.
+2. **Navigate to the project directory**: Use the command `cd accessibility-challenges`.
 
 3. **Install the project dependencies**: In the project directory, run the command `npm install` to install all necessary dependencies.
 
