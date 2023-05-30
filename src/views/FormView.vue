@@ -2,33 +2,28 @@
     <div class="form-view">
         <h1 class="form-title">Your Form Title</h1>
         <form>
-            <TextField 
+            <TextField
                 id="textFieldId"
-                label="Your name (real or fake)" 
-                placeholder="Enter your name..." 
-                v-model="formData.name" 
+                label="Your name (real or fake)"
+                placeholder="Enter your name..."
+                v-model="formData.name"
                 :required="true"
                 :isErrorVisible="isErrorVisible"
                 error="The name field is required."
             />
 
-            <NumericField 
-                id="numericFieldId"
-                label="Your favorite number" 
-                placeholder="Enter your favorite number..." 
-                v-model="formData.age" 
-            />
+            <NumericField id="numericFieldId" label="Your favorite number" placeholder="Enter your favorite number..." v-model="formData.age" />
 
             <TextAreaField
-                id="textAreId"
+                id="textAreaId"
                 label="Your hobbies or what kind of hobby you dream of having"
                 placeholder="List your hobbies..."
                 v-model="formData.hobbies"
             />
 
-            <SelectField label="Your favorite color" :options="colorOptions" v-model="formData.favoriteColor" />
+            <SelectField id="selectFieldId" label="Your favorite color" :options="colorOptions" v-model="formData.favoriteColor" />
 
-            <RadioButtonField label="Your preferred pet" :options="petOptions" v-model="formData.preferredPet" />
+            <RadioButtonField id="radioButtonGroup" label="Your preferred pet" :options="petOptions" v-model="formData.preferredPet" />
 
             <div class="submit-area">
                 <button class="submit-button" type="button" @click.prevent="submitForm">Submit</button>

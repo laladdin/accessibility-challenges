@@ -20,7 +20,7 @@
         </tbody>
     </table>
 
-    <h2 id="srdata-table-title" class="mt-5 p-0">Screen reader usage shares</h2>
+    <h2 id="srdata-table-title" class="mt-5 p-0">Screen reader use percentages by browser</h2>
     <p id="srdata-table-info" class="mb-0 p-0">
         Other screen reader + browser combinations including the table cells where data is not available amount up to 10.4%.
     </p>

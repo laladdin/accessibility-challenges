@@ -9,6 +9,7 @@ import EventPlanner from "./views/EventPlanner.vue";
 import ModalView from "./views/ModalView.vue";
 import FormView from "./views/FormView.vue";
 import TableView from "./views/TableView.vue";
+import "./style.css";
 
 const pageTitle = "Accessibility Exercises";
 
